@@ -31,7 +31,7 @@ void printChar(unsigned char c) {
   } else {
     unsigned char *video_memory = (unsigned char *)VIDEO_BASE;
     *(video_memory + (cursorY * COLS + cursorX) * 2)     = c;
-    (video_memory + (cursorY * COLS + cursorX) * 2 + 1) = DEFAULT_STYLE;
+    *(video_memory + (cursorY * COLS + cursorX) * 2 + 1) = DEFAULT_STYLE;
     cursorX++;
   }
   setCursor(cursorX, cursorY);
