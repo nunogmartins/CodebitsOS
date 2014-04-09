@@ -1,0 +1,5 @@
+BasicOS
+=======
+
+Simple C kernel with a bootloader.
+Allows you to press keys and get them echoed back to screen.
